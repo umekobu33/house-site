@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- OGP画像 -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- Googleフォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ファビコン -->
+    <link rel="icon" href="./img/favicon.ico" />
+
+    <!-- タイトル・ディスクリプション -->
+    <meta name="description" content="こちらはダミーテキストです。" />
+    <title>Rich Life</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__contents">
+          <a class="header__logo" href="#">
+            <img src="./img/logo.png" alt="ReLifeのロゴ" />
+          </a>
+          <nav class="header__nav">
+            <button class="header__button" id="js-modal1--button">
+              <span class="header__button-text">家具</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="#948260"
+              >
+                <path
+                  d="M6.98245 12.6359L2.98245 6.2359C2.86892 6.05426 2.80608 5.84553 2.80046 5.6314C2.79484 5.41727 2.84664 5.20553 2.95048 5.01818C3.05432 4.83083 3.20642 4.67468 3.39098 4.56596C3.57554 4.45724 3.78585 4.3999 4.00005 4.3999H12.0001C12.2143 4.3999 12.4246 4.45724 12.6091 4.56596C12.7937 4.67468 12.9458 4.83083 13.0496 5.01818C13.1535 5.20553 13.2053 5.41727 13.1996 5.6314C13.194 5.84553 13.1312 6.05426 13.0177 6.2359L9.01765 12.6359C8.90978 12.8085 8.75979 12.9508 8.58178 13.0495C8.40376 13.1481 8.20358 13.1999 8.00005 13.1999C7.79652 13.1999 7.59634 13.1481 7.41833 13.0495C7.24031 12.9508 7.09032 12.8085 6.98245 12.6359Z"
+                />
+              </svg>
+            </button>
+            <button class="header__button" id="js-modal2--button">
+              <span class="header__button-text">家電</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="#948260"
+              >
+                <path
+                  d="M6.98245 12.6359L2.98245 6.2359C2.86892 6.05426 2.80608 5.84553 2.80046 5.6314C2.79484 5.41727 2.84664 5.20553 2.95048 5.01818C3.05432 4.83083 3.20642 4.67468 3.39098 4.56596C3.57554 4.45724 3.78585 4.3999 4.00005 4.3999H12.0001C12.2143 4.3999 12.4246 4.45724 12.6091 4.56596C12.7937 4.67468 12.9458 4.83083 13.0496 5.01818C13.1535 5.20553 13.2053 5.41727 13.1996 5.6314C13.194 5.84553 13.1312 6.05426 13.0177 6.2359L9.01765 12.6359C8.90978 12.8085 8.75979 12.9508 8.58178 13.0495C8.40376 13.1481 8.20358 13.1999 8.00005 13.1999C7.79652 13.1999 7.59634 13.1481 7.41833 13.0495C7.24031 12.9508 7.09032 12.8085 6.98245 12.6359Z"
+                />
+              </svg>
+            </button>
+            <a href="#" class="header__company">法人のお客様へ</a>
+            <a href="#" class="header__login">ログイン/会員登録</a>
+            <a
+              class="header__cart-pc"
+              href="#"
+              role="button"
+              aria-label="カートを開く"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                class="cart-icon"
+              >
+                <path
+                  d="M4.79995 1.59998C4.3756 1.59998 3.96864 1.76855 3.66858 2.0686C3.36852 2.36866 3.19995 2.77563 3.19995 3.19998C3.19995 3.62432 3.36852 4.03129 3.66858 4.33135C3.96864 4.6314 4.3756 4.79998 4.79995 4.79998H6.75195L7.23995 6.75518C7.2448 6.77769 7.25013 6.80009 7.25595 6.82238L9.42875 15.5104L7.99995 16.9376C5.98395 18.9536 7.41115 22.4 10.2624 22.4H24C24.4243 22.4 24.8313 22.2314 25.1313 21.9313C25.4314 21.6313 25.6 21.2243 25.6 20.8C25.6 20.3756 25.4314 19.9687 25.1313 19.6686C24.8313 19.3685 24.4243 19.2 24 19.2H10.2624L11.8624 17.6H22.4C22.697 17.5998 22.9882 17.517 23.2408 17.3607C23.4934 17.2044 23.6976 16.9809 23.8304 16.7152L28.6304 7.11518C28.7522 6.8713 28.8097 6.60034 28.7975 6.32799C28.7852 6.05564 28.7036 5.79094 28.5603 5.55901C28.417 5.32708 28.2168 5.13561 27.9787 5.00277C27.7406 4.86993 27.4726 4.80012 27.2 4.79998H10.048L9.55195 2.81118C9.46528 2.46518 9.26547 2.15807 8.98428 1.93862C8.70309 1.71918 8.35664 1.59998 7.99995 1.59998H4.79995ZM25.6 26.4C25.6 27.0365 25.3471 27.6469 24.897 28.097C24.4469 28.5471 23.8365 28.8 23.2 28.8C22.5634 28.8 21.953 28.5471 21.5029 28.097C21.0528 27.6469 20.8 27.0365 20.8 26.4C20.8 25.7635 21.0528 25.153 21.5029 24.7029C21.953 24.2528 22.5634 24 23.2 24C23.8365 24 24.4469 24.2528 24.897 24.7029C25.3471 25.153 25.6 25.7635 25.6 26.4ZM10.4 28.8C11.0365 28.8 11.6469 28.5471 12.097 28.097C12.5471 27.6469 12.8 27.0365 12.8 26.4C12.8 25.7635 12.5471 25.153 12.097 24.7029C11.6469 24.2528 11.0365 24 10.4 24C9.76343 24 9.15298 24.2528 8.70289 24.7029C8.25281 25.153 7.99995 25.7635 7.99995 26.4C7.99995 27.0365 8.25281 27.6469 8.70289 28.097C9.15298 28.5471 9.76343 28.8 10.4 28.8Z"
+                  fill="#565956"
+                />
+              </svg>
+            </a>
+          </nav>
+          <div class="header__menu-sp">
+            <a
+              class="header__login-sp"
+              href="#"
+              role="button"
+              aria-label="ログアウト"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.5999 3.6001C3.91816 3.6001 4.22339 3.72653 4.44843 3.95157C4.67347 4.17661 4.7999 4.48184 4.7999 4.8001V19.2001C4.7999 19.5184 4.67347 19.8236 4.44843 20.0486C4.22339 20.2737 3.91816 20.4001 3.5999 20.4001C3.28164 20.4001 2.97642 20.2737 2.75137 20.0486C2.52633 19.8236 2.3999 19.5184 2.3999 19.2001V4.8001C2.3999 4.48184 2.52633 4.17661 2.75137 3.95157C2.97642 3.72653 3.28164 3.6001 3.5999 3.6001ZM12.8483 7.5517C13.0733 7.77673 13.1996 8.0819 13.1996 8.4001C13.1996 8.71829 13.0733 9.02346 12.8483 9.2485L11.2967 10.8001H20.3999C20.7182 10.8001 21.0234 10.9265 21.2484 11.1516C21.4735 11.3766 21.5999 11.6818 21.5999 12.0001C21.5999 12.3184 21.4735 12.6236 21.2484 12.8486C21.0234 13.0737 20.7182 13.2001 20.3999 13.2001H11.2967L12.8483 14.7517C13.0669 14.978 13.1878 15.2811 13.1851 15.5958C13.1824 15.9104 13.0562 16.2114 12.8337 16.4339C12.6112 16.6564 12.3102 16.7826 11.9956 16.7853C11.6809 16.788 11.3778 16.6671 11.1515 16.4485L7.5515 12.8485C7.32654 12.6235 7.20016 12.3183 7.20016 12.0001C7.20016 11.6819 7.32654 11.3767 7.5515 11.1517L11.1515 7.5517C11.3765 7.32673 11.6817 7.20035 11.9999 7.20035C12.3181 7.20035 12.6233 7.32673 12.8483 7.5517Z"
+                  fill="#565956"
+                />
+              </svg>
+            </a>
+            <a
+              class="header__cart-sp"
+              href="#"
+              role="button"
+              aria-label="カートを開く"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                class="cart-icon"
+              >
+                <path
+                  d="M4.79995 1.59998C4.3756 1.59998 3.96864 1.76855 3.66858 2.0686C3.36852 2.36866 3.19995 2.77563 3.19995 3.19998C3.19995 3.62432 3.36852 4.03129 3.66858 4.33135C3.96864 4.6314 4.3756 4.79998 4.79995 4.79998H6.75195L7.23995 6.75518C7.2448 6.77769 7.25013 6.80009 7.25595 6.82238L9.42875 15.5104L7.99995 16.9376C5.98395 18.9536 7.41115 22.4 10.2624 22.4H24C24.4243 22.4 24.8313 22.2314 25.1313 21.9313C25.4314 21.6313 25.6 21.2243 25.6 20.8C25.6 20.3756 25.4314 19.9687 25.1313 19.6686C24.8313 19.3685 24.4243 19.2 24 19.2H10.2624L11.8624 17.6H22.4C22.697 17.5998 22.9882 17.517 23.2408 17.3607C23.4934 17.2044 23.6976 16.9809 23.8304 16.7152L28.6304 7.11518C28.7522 6.8713 28.8097 6.60034 28.7975 6.32799C28.7852 6.05564 28.7036 5.79094 28.5603 5.55901C28.417 5.32708 28.2168 5.13561 27.9787 5.00277C27.7406 4.86993 27.4726 4.80012 27.2 4.79998H10.048L9.55195 2.81118C9.46528 2.46518 9.26547 2.15807 8.98428 1.93862C8.70309 1.71918 8.35664 1.59998 7.99995 1.59998H4.79995ZM25.6 26.4C25.6 27.0365 25.3471 27.6469 24.897 28.097C24.4469 28.5471 23.8365 28.8 23.2 28.8C22.5634 28.8 21.953 28.5471 21.5029 28.097C21.0528 27.6469 20.8 27.0365 20.8 26.4C20.8 25.7635 21.0528 25.153 21.5029 24.7029C21.953 24.2528 22.5634 24 23.2 24C23.8365 24 24.4469 24.2528 24.897 24.7029C25.3471 25.153 25.6 25.7635 25.6 26.4ZM10.4 28.8C11.0365 28.8 11.6469 28.5471 12.097 28.097C12.5471 27.6469 12.8 27.0365 12.8 26.4C12.8 25.7635 12.5471 25.153 12.097 24.7029C11.6469 24.2528 11.0365 24 10.4 24C9.76343 24 9.15298 24.2528 8.70289 24.7029C8.25281 25.153 7.99995 25.7635 7.99995 26.4C7.99995 27.0365 8.25281 27.6469 8.70289 28.097C9.15298 28.5471 9.76343 28.8 10.4 28.8Z"
+                  fill="#565956"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header-modal1 -->
+    <dialog id="js-modal1" class="modal">
+      <!-- <div class="modal__wrapper"> -->
+      <div class="modal__container">
+        <div class="modal__heading">
+          <h2 class="modal__head">家具</h2>
+        </div>
+        <nav class="modal__nav">
+          <ul class="modal__list">
+            <li class="modal__item" onclick="location.href='#'">すべて</li>
+            <li class="modal__item" onclick="location.href='#'">ソファ</li>
+            <li class="modal__item" onclick="location.href='#'">
+              ベッド・寝具
+            </li>
+            <li class="modal__item" onclick="location.href='#'">チェア</li>
+            <li class="modal__item" onclick="location.href='#'">ダイニング</li>
+            <li class="modal__item" onclick="location.href='#'">デスク</li>
+            <li class="modal__item" onclick="location.href='#'">
+              収納用品・ケース
+            </li>
+            <li class="modal__item" onclick="location.href='#'">テレビ台</li>
+            <li class="modal__item" onclick="location.href='#'">照明</li>
+            <li class="modal__item" onclick="location.href='#'">カーテン</li>
+            <li class="modal__item" onclick="location.href='#'">観葉植物</li>
+            <li class="modal__item" onclick="location.href='#'">その他家具</li>
+          </ul>
+        </nav>
+      </div>
+      <!-- </div> -->
+    </dialog>
+
+    <!-- header-modal2 -->
+    <dialog id="js-modal2" class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__head">家具</h2>
+          <nav class="modal__nav">
+            <ul class="modal__list">
+              <li class="modal__item" onclick="location.href='#'">すべて</li>
+              <li class="modal__item" onclick="location.href='#'">洗濯機</li>
+              <li class="modal__item" onclick="location.href='#'">冷蔵庫</li>
+              <li class="modal__item" onclick="location.href='#'">
+                電子レンジ
+              </li>
+              <li class="modal__item" onclick="location.href='#'">テレビ</li>
+              <li class="modal__item" onclick="location.href='#'">掃除機</li>
+              <li class="modal__item" onclick="location.href='#'">AV機器</li>
+              <li class="modal__item" onclick="location.href='#'">空調</li>
+              <li class="modal__item" onclick="location.href='#'">美容</li>
+              <li class="modal__item" onclick="location.href='#'">
+                その他家電
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- mv -->
+    <section class="mv">
+      <div class="mv__inner">
+        <div class="mv__contents">
+          <h1 class="mv__title">
+            <span class="mv__title-main">いつでもどこでも。</span>
+            <span class="mv__title-main hidden-sp"
+              >わたしの好きが集まる暮らし。</span
+            >
+            <span class="mv__title-main hidden-pc">わたしの好きが集まる</span>
+            <span class="mv__title-main hidden-pc">暮らし。</span>
+            <span class="mv__title-sub"
+              >おうち空間を自由かつ手軽に模様替え</span
+            >
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- cv -->
+    <section class="cv">
+      <div class="cv__inner">
+        <div class="cv__contents">
+          <h2 class="cv__text">
+            <span class="cv__text-absolute">今だけ</span>
+            <span class="cv__text-sub">高品質でセンスのいい家具・家電を</span>
+            <span class="cv__text-main"
+              >10%OFF価格で<br class="hidden-pc" />
+              レンタルできます。</span
+            >
+          </h2>
+          <ul class="cv__list">
+            <li class="cv__step">月額440円〜</li>
+            <li class="cv__step">1ヶ月〜レンタル可能</li>
+            <li class="cv__step">長期レンタル割引あり</li>
+          </ul>
+          <div class="cv__button-wrapper">
+            <p class="cv__comment">カンタン！ 3 STEP</p>
+            <a class="cv__button" role="button">
+              <span class="cv__button-text">今すぐ会員登録</span>
+              <svg
+                class="cv__button-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M4 12H20"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 5L20 12L13 19"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- real -->
+    <section class="real">
+      <div class="section__inner">
+        <h2 class="section__heading">
+          <span class="heading__main">
+            Rich-Lifeがお約束する、<br class="hidden-pc" />5つの暮らし
+          </span>
+          <span class="heading__sub">REALIZATION</span>
+        </h2>
+        <div class="real__contents">
+          <div class="real__card">
+            <h3 class="real__reason">reason 01</h3>
+            <div class="real__img">
+              <img src="./img/real_chair.png" alt="手書き風のイス" />
+            </div>
+            <p class="real__text">
+              交換・返却費が無料で「今」最適な空間を選べる
+            </p>
+          </div>
+
+          <div class="real__card">
+            <h3 class="real__reason">reason 02</h3>
+            <div class="real__img">
+              <img src="./img/real_women.png" alt="手書き風のレジをうつ女性" />
+            </div>
+            <p class="real__text">
+              初期コスト抑え、気軽に質の良い空間を手に入れられる
+            </p>
+          </div>
+          <div class="real__card">
+            <h3 class="real__reason">reason 03</h3>
+            <div class="real__img">
+              <img src="./img/real_man.png" alt="手書き風の男性" />
+            </div>
+            <p class="real__text">モノを持たずに引っ越しや模様替えを楽しめる</p>
+          </div>
+          <div class="real__card">
+            <h3 class="real__reason">reason 04</h3>
+            <div class="real__img">
+              <img src="./img/real_earth.png" alt="手書き風の地球" />
+            </div>
+            <p class="real__text">モノをなるべく捨てない、環境に優しい暮らし</p>
+          </div>
+          <div class="real__card">
+            <h3 class="real__reason">reason 05</h3>
+            <div class="real__img">
+              <img src="./img/real_drink.png" alt="手書き風のカクテル" />
+            </div>
+            <p class="real__text">
+              本当に好きなモノに 囲まれる<br />豊かな暮らし
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section class="news">
+      <div class="section__inner">
+        <div class="news__contents">
+          <p class="news__text">
+            おかげさまで<br class="hidden-pc" />Rich-Life USER 総会員数
+          </p>
+          <h2 class="news__head">16万人突破!</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- voice -->
+    <section class="voice">
+      <div class="section__inner">
+        <h2 class="section__heading">
+          <span class="heading__main"> 利用者さまの声 </span>
+          <span class="heading__sub">VOICE</span>
+        </h2>
+        <div class="voice__contents">
+          <div class="voice__card">
+            <p class="voice__tag">REVIEW 01</p>
+            <div class="voice__img">
+              <img src="./img/room1.jpg" alt="個性的なインテリアの部屋" />
+            </div>
+            <div class="voice__word">
+              <h3 class="voice__heading">
+                <span>センスのいい家具で</span>
+                <span>ワンランク上のお部屋に</span>
+              </h3>
+              <p class="voice__text">
+                必要なときにだけ借りることができるコンセプトに魅力を感じて利用。<br />
+                レンタルできる家具はどれもセンスが良いので、ハズレがありません。そしてRich-Lifeの家具をお迎えしたことで、いつものおうち空間がワンランク上の部屋になって本当にうれしいです。<br />
+                今ではシーズンごとに家具のテイストを変えるのが楽しみになっています。
+              </p>
+              <p class="voice__age">20代女性・XXXX子さん</p>
+            </div>
+          </div>
+
+          <div class="voice__card">
+            <p class="voice__tag">REVIEW 02</p>
+            <div class="voice__img">
+              <img src="./img/room2.jpg" alt="家庭的で明るい部屋" />
+            </div>
+            <div class="voice__word white-box">
+              <h3 class="voice__heading">
+                <span>家具家電を汚した時の</span>
+                <span>レンタル保証がうれしい。</span>
+              </h3>
+              <p class="voice__text">
+                家具のレンタルに興味はあったものの、小さい子どもがいるので家具・家電を汚してしまった時のことが心配でなかなか踏み切れずにいました。ですがRich-Lifeは家具を汚したときの保証があるので安心して利用できています。以前子供がソファーに飲み物をこぼしてしまったのですが無料で交換してくれてとても助かりました。
+              </p>
+              <p class="voice__age">30代女性・XXXX子さん</p>
+            </div>
+          </div>
+
+          <div class="voice__card">
+            <p class="voice__tag">REVIEW 03</p>
+            <div class="voice__img">
+              <img src="./img/room3.jpg" alt="開放的な部屋" />
+            </div>
+            <div class="voice__word">
+              <h3 class="voice__heading">
+                <span>本当に好きなモノに囲まれる</span>
+                <span>豊かな暮らしを。</span>
+              </h3>
+              <p class="voice__text">
+                子どもが巣立ち、これからは必要最小限でかつ品質の良いお気に入りのモノたちに囲まれた生活をしたいと思っていました。でもいきなり購入するのは気が引ける、と思っていたところこちらのサービスを見つけました。月額440円〜利用できますので色々試しながらこれからの自分たちに合った家具・家電を探しています。
+              </p>
+              <p class="voice__age">50代女性・XXXX子さん</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- solution -->
+    <section class="solution">
+      <div class="section__inner">
+        <h2 class="section__heading">
+          <span class="heading__main">
+            こんなことでお悩みではないですか？
+          </span>
+          <span class="heading__sub">SOLUTION</span>
+        </h2>
+        <div class="solution__contents">
+          <div class="solution__card">
+            <svg
+              class="voice__check"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_21120_746)">
+                <path
+                  d="M16 30.001C12.287 30.001 8.72601 28.526 6.1005 25.9005C3.475 23.275 2 19.714 2 16.001C2 12.2879 3.475 8.72699 6.1005 6.10148C8.72601 3.47597 12.287 2.00098 16 2.00098C19.713 2.00098 23.274 3.47597 25.8995 6.10148C28.525 8.72699 30 12.2879 30 16.001C30 19.714 28.525 23.275 25.8995 25.9005C23.274 28.526 19.713 30.001 16 30.001ZM16 32.001C20.2435 32.001 24.3131 30.3153 27.3137 27.3147C30.3143 24.3141 32 20.2444 32 16.001C32 11.7575 30.3143 7.68785 27.3137 4.68727C24.3131 1.68669 20.2435 0.000976563 16 0.000976562C11.7565 0.000976563 7.68687 1.68669 4.68629 4.68727C1.68571 7.68785 0 11.7575 0 16.001C0 20.2444 1.68571 24.3141 4.68629 27.3147C7.68687 30.3153 11.7565 32.001 16 32.001Z"
+                  fill="#609484"
+                />
+                <path
+                  d="M21.9399 9.94099C21.9257 9.9548 21.9123 9.96949 21.8999 9.98499L14.9539 18.835L10.7679 14.647C10.4836 14.382 10.1075 14.2378 9.7189 14.2446C9.3303 14.2515 8.95953 14.4089 8.6847 14.6837C8.40987 14.9586 8.25245 15.3293 8.2456 15.7179C8.23874 16.1065 8.38298 16.4826 8.64794 16.767L13.9399 22.061C14.0825 22.2033 14.2523 22.3154 14.4391 22.3907C14.626 22.466 14.826 22.5028 15.0274 22.4991C15.2288 22.4954 15.4274 22.4511 15.6113 22.369C15.7953 22.2868 15.9608 22.1685 16.0979 22.021L24.0819 12.041C24.3538 11.7556 24.5024 11.3748 24.4957 10.9807C24.489 10.5867 24.3275 10.2111 24.0461 9.93518C23.7646 9.65927 23.3859 9.5052 22.9918 9.50629C22.5977 9.50738 22.2198 9.66353 21.9399 9.94099Z"
+                  fill="#609484"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_21120_746">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(0 0.000976562)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="solution__text">
+              しっくりくる家具を選びたい。でもいきなり買うのは自信がない
+            </p>
+          </div>
+
+          <div class="solution__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_21120_746)">
+                <path
+                  d="M16 30.001C12.287 30.001 8.72601 28.526 6.1005 25.9005C3.475 23.275 2 19.714 2 16.001C2 12.2879 3.475 8.72699 6.1005 6.10148C8.72601 3.47597 12.287 2.00098 16 2.00098C19.713 2.00098 23.274 3.47597 25.8995 6.10148C28.525 8.72699 30 12.2879 30 16.001C30 19.714 28.525 23.275 25.8995 25.9005C23.274 28.526 19.713 30.001 16 30.001ZM16 32.001C20.2435 32.001 24.3131 30.3153 27.3137 27.3147C30.3143 24.3141 32 20.2444 32 16.001C32 11.7575 30.3143 7.68785 27.3137 4.68727C24.3131 1.68669 20.2435 0.000976563 16 0.000976562C11.7565 0.000976563 7.68687 1.68669 4.68629 4.68727C1.68571 7.68785 0 11.7575 0 16.001C0 20.2444 1.68571 24.3141 4.68629 27.3147C7.68687 30.3153 11.7565 32.001 16 32.001Z"
+                  fill="#609484"
+                />
+                <path
+                  d="M21.9399 9.94099C21.9257 9.9548 21.9123 9.96949 21.8999 9.98499L14.9539 18.835L10.7679 14.647C10.4836 14.382 10.1075 14.2378 9.7189 14.2446C9.3303 14.2515 8.95953 14.4089 8.6847 14.6837C8.40987 14.9586 8.25245 15.3293 8.2456 15.7179C8.23874 16.1065 8.38298 16.4826 8.64794 16.767L13.9399 22.061C14.0825 22.2033 14.2523 22.3154 14.4391 22.3907C14.626 22.466 14.826 22.5028 15.0274 22.4991C15.2288 22.4954 15.4274 22.4511 15.6113 22.369C15.7953 22.2868 15.9608 22.1685 16.0979 22.021L24.0819 12.041C24.3538 11.7556 24.5024 11.3748 24.4957 10.9807C24.489 10.5867 24.3275 10.2111 24.0461 9.93518C23.7646 9.65927 23.3859 9.5052 22.9918 9.50629C22.5977 9.50738 22.2198 9.66353 21.9399 9.94099Z"
+                  fill="#609484"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_21120_746">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(0 0.000976562)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="solution__text">
+              引っ越しのたびに物を持っていることが大きな負担である。
+            </p>
+          </div>
+
+          <div class="solution__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_21120_746)">
+                <path
+                  d="M16 30.001C12.287 30.001 8.72601 28.526 6.1005 25.9005C3.475 23.275 2 19.714 2 16.001C2 12.2879 3.475 8.72699 6.1005 6.10148C8.72601 3.47597 12.287 2.00098 16 2.00098C19.713 2.00098 23.274 3.47597 25.8995 6.10148C28.525 8.72699 30 12.2879 30 16.001C30 19.714 28.525 23.275 25.8995 25.9005C23.274 28.526 19.713 30.001 16 30.001ZM16 32.001C20.2435 32.001 24.3131 30.3153 27.3137 27.3147C30.3143 24.3141 32 20.2444 32 16.001C32 11.7575 30.3143 7.68785 27.3137 4.68727C24.3131 1.68669 20.2435 0.000976563 16 0.000976562C11.7565 0.000976563 7.68687 1.68669 4.68629 4.68727C1.68571 7.68785 0 11.7575 0 16.001C0 20.2444 1.68571 24.3141 4.68629 27.3147C7.68687 30.3153 11.7565 32.001 16 32.001Z"
+                  fill="#609484"
+                />
+                <path
+                  d="M21.9399 9.94099C21.9257 9.9548 21.9123 9.96949 21.8999 9.98499L14.9539 18.835L10.7679 14.647C10.4836 14.382 10.1075 14.2378 9.7189 14.2446C9.3303 14.2515 8.95953 14.4089 8.6847 14.6837C8.40987 14.9586 8.25245 15.3293 8.2456 15.7179C8.23874 16.1065 8.38298 16.4826 8.64794 16.767L13.9399 22.061C14.0825 22.2033 14.2523 22.3154 14.4391 22.3907C14.626 22.466 14.826 22.5028 15.0274 22.4991C15.2288 22.4954 15.4274 22.4511 15.6113 22.369C15.7953 22.2868 15.9608 22.1685 16.0979 22.021L24.0819 12.041C24.3538 11.7556 24.5024 11.3748 24.4957 10.9807C24.489 10.5867 24.3275 10.2111 24.0461 9.93518C23.7646 9.65927 23.3859 9.5052 22.9918 9.50629C22.5977 9.50738 22.2198 9.66353 21.9399 9.94099Z"
+                  fill="#609484"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_21120_746">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(0 0.000976562)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="solution__text">
+              きちんとした家具を使いたいけど、予算的に負担が大きい
+            </p>
+          </div>
+
+          <div class="solution__contents-wrapper">
+            <div class="solution__card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_21120_746)">
+                  <path
+                    d="M16 30.001C12.287 30.001 8.72601 28.526 6.1005 25.9005C3.475 23.275 2 19.714 2 16.001C2 12.2879 3.475 8.72699 6.1005 6.10148C8.72601 3.47597 12.287 2.00098 16 2.00098C19.713 2.00098 23.274 3.47597 25.8995 6.10148C28.525 8.72699 30 12.2879 30 16.001C30 19.714 28.525 23.275 25.8995 25.9005C23.274 28.526 19.713 30.001 16 30.001ZM16 32.001C20.2435 32.001 24.3131 30.3153 27.3137 27.3147C30.3143 24.3141 32 20.2444 32 16.001C32 11.7575 30.3143 7.68785 27.3137 4.68727C24.3131 1.68669 20.2435 0.000976563 16 0.000976562C11.7565 0.000976563 7.68687 1.68669 4.68629 4.68727C1.68571 7.68785 0 11.7575 0 16.001C0 20.2444 1.68571 24.3141 4.68629 27.3147C7.68687 30.3153 11.7565 32.001 16 32.001Z"
+                    fill="#609484"
+                  />
+                  <path
+                    d="M21.9399 9.94099C21.9257 9.9548 21.9123 9.96949 21.8999 9.98499L14.9539 18.835L10.7679 14.647C10.4836 14.382 10.1075 14.2378 9.7189 14.2446C9.3303 14.2515 8.95953 14.4089 8.6847 14.6837C8.40987 14.9586 8.25245 15.3293 8.2456 15.7179C8.23874 16.1065 8.38298 16.4826 8.64794 16.767L13.9399 22.061C14.0825 22.2033 14.2523 22.3154 14.4391 22.3907C14.626 22.466 14.826 22.5028 15.0274 22.4991C15.2288 22.4954 15.4274 22.4511 15.6113 22.369C15.7953 22.2868 15.9608 22.1685 16.0979 22.021L24.0819 12.041C24.3538 11.7556 24.5024 11.3748 24.4957 10.9807C24.489 10.5867 24.3275 10.2111 24.0461 9.93518C23.7646 9.65927 23.3859 9.5052 22.9918 9.50629C22.5977 9.50738 22.2198 9.66353 21.9399 9.94099Z"
+                    fill="#609484"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_21120_746">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.000976562)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="solution__text">新しい商品が出たら買い換えたい</p>
+            </div>
+
+            <div class="solution__card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_21120_746)">
+                  <path
+                    d="M16 30.001C12.287 30.001 8.72601 28.526 6.1005 25.9005C3.475 23.275 2 19.714 2 16.001C2 12.2879 3.475 8.72699 6.1005 6.10148C8.72601 3.47597 12.287 2.00098 16 2.00098C19.713 2.00098 23.274 3.47597 25.8995 6.10148C28.525 8.72699 30 12.2879 30 16.001C30 19.714 28.525 23.275 25.8995 25.9005C23.274 28.526 19.713 30.001 16 30.001ZM16 32.001C20.2435 32.001 24.3131 30.3153 27.3137 27.3147C30.3143 24.3141 32 20.2444 32 16.001C32 11.7575 30.3143 7.68785 27.3137 4.68727C24.3131 1.68669 20.2435 0.000976563 16 0.000976562C11.7565 0.000976563 7.68687 1.68669 4.68629 4.68727C1.68571 7.68785 0 11.7575 0 16.001C0 20.2444 1.68571 24.3141 4.68629 27.3147C7.68687 30.3153 11.7565 32.001 16 32.001Z"
+                    fill="#609484"
+                  />
+                  <path
+                    d="M21.9399 9.94099C21.9257 9.9548 21.9123 9.96949 21.8999 9.98499L14.9539 18.835L10.7679 14.647C10.4836 14.382 10.1075 14.2378 9.7189 14.2446C9.3303 14.2515 8.95953 14.4089 8.6847 14.6837C8.40987 14.9586 8.25245 15.3293 8.2456 15.7179C8.23874 16.1065 8.38298 16.4826 8.64794 16.767L13.9399 22.061C14.0825 22.2033 14.2523 22.3154 14.4391 22.3907C14.626 22.466 14.826 22.5028 15.0274 22.4991C15.2288 22.4954 15.4274 22.4511 15.6113 22.369C15.7953 22.2868 15.9608 22.1685 16.0979 22.021L24.0819 12.041C24.3538 11.7556 24.5024 11.3748 24.4957 10.9807C24.489 10.5867 24.3275 10.2111 24.0461 9.93518C23.7646 9.65927 23.3859 9.5052 22.9918 9.50629C22.5977 9.50738 22.2198 9.66353 21.9399 9.94099Z"
+                    fill="#609484"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_21120_746">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.000976562)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="solution__text">模様替えをもっと楽しみたい</p>
+            </div>
+          </div>
+
+          <div class="solution__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_21120_746)">
+                <path
+                  d="M16 30.001C12.287 30.001 8.72601 28.526 6.1005 25.9005C3.475 23.275 2 19.714 2 16.001C2 12.2879 3.475 8.72699 6.1005 6.10148C8.72601 3.47597 12.287 2.00098 16 2.00098C19.713 2.00098 23.274 3.47597 25.8995 6.10148C28.525 8.72699 30 12.2879 30 16.001C30 19.714 28.525 23.275 25.8995 25.9005C23.274 28.526 19.713 30.001 16 30.001ZM16 32.001C20.2435 32.001 24.3131 30.3153 27.3137 27.3147C30.3143 24.3141 32 20.2444 32 16.001C32 11.7575 30.3143 7.68785 27.3137 4.68727C24.3131 1.68669 20.2435 0.000976563 16 0.000976562C11.7565 0.000976563 7.68687 1.68669 4.68629 4.68727C1.68571 7.68785 0 11.7575 0 16.001C0 20.2444 1.68571 24.3141 4.68629 27.3147C7.68687 30.3153 11.7565 32.001 16 32.001Z"
+                  fill="#609484"
+                />
+                <path
+                  d="M21.9399 9.94099C21.9257 9.9548 21.9123 9.96949 21.8999 9.98499L14.9539 18.835L10.7679 14.647C10.4836 14.382 10.1075 14.2378 9.7189 14.2446C9.3303 14.2515 8.95953 14.4089 8.6847 14.6837C8.40987 14.9586 8.25245 15.3293 8.2456 15.7179C8.23874 16.1065 8.38298 16.4826 8.64794 16.767L13.9399 22.061C14.0825 22.2033 14.2523 22.3154 14.4391 22.3907C14.626 22.466 14.826 22.5028 15.0274 22.4991C15.2288 22.4954 15.4274 22.4511 15.6113 22.369C15.7953 22.2868 15.9608 22.1685 16.0979 22.021L24.0819 12.041C24.3538 11.7556 24.5024 11.3748 24.4957 10.9807C24.489 10.5867 24.3275 10.2111 24.0461 9.93518C23.7646 9.65927 23.3859 9.5052 22.9918 9.50629C22.5977 9.50738 22.2198 9.66353 21.9399 9.94099Z"
+                  fill="#609484"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_21120_746">
+                  <rect
+                    width="32"
+                    height="32"
+                    fill="white"
+                    transform="translate(0 0.000976562)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="solution__text">
+              モノを捨てない、環境に優しい暮らしを楽しみながらしたい
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- scene1 -->
+    <section class="scene1">
+      <div class="section__inner">
+        <div class="scene__border">
+          <p class="scene__comment">
+            Rich-Lifeの家具・家電レンタルサービスはそんな理想の暮らしをご提供いたします。
+          </p>
+        </div>
+        <h2 class="section__heading">
+          <span class="heading__main">
+            Rich-Lifeで叶える、<br class="hidden-pc" />理想の暮らし紹介
+          </span>
+          <span class="heading__sub">REALIZATION</span>
+        </h2>
+        <div class="scene1__contents">
+          <div class="scene1__img">
+            <p class="scene1__img-head">SCENE 01</p>
+            <img src="./img/sofa_scene1.jpg" alt="大きなソファ" />
+          </div>
+          <div class="point__contents">
+            <div class="point__box">
+              <h3 class="point__head">
+                <span>「スキ」なものを</span>
+                <span>際立たせた空間作りを。</span>
+              </h3>
+              <h3 class="point__head-pc">
+                「スキ」なものを際立たせた空間作りを。
+              </h3>
+              <div class="point__cards">
+                <div class="point__card">
+                  <h4 class="point__explain">STYLE POINT</h4>
+                  <p class="point__text">
+                    ソファの足元にオットマンを配置すれば、カウチスタイルの出来上がり。<br />
+                    アームレスの特徴を活かして左右どちらにでも足を降ろしやすいので、楽な姿勢を見つけてみて。
+                  </p>
+                  <div class="point__img">
+                    <img src="./img/man_point.jpg" alt="くつろぐ男性" />
+                  </div>
+                </div>
+
+                <div class="point__card">
+                  <h4 class="point__explain point__explain--type2">
+                    ONE POINT ADVICE
+                  </h4>
+                  <p class="point__text">
+                    モバイルプロジェクターをサイドテーブルに置いて、足を伸ばした状態でゆったりと映画を楽むのはどうでしょう。Rich-Lifeではターンテーブルやスピーカーなどの音楽
+                    家電も取り扱っています。
+                  </p>
+                  <div class="point__img">
+                    <img src="./img/projector_point.jpg" alt="プロジェクター" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="point__img-wrapper">
+              <div class="point__space">
+                <div class="point__img-left">
+                  <img src="./img/man_point.jpg" alt="くつろぐ男性" />
+                </div>
+                <div class="point__img-right">
+                  <img src="./img/projector_point.jpg" alt="プロジェクター" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scene1__line line__contents">
+            <h3 class="line__head">
+              <p class="line__head-main">使用している家具・家電</p>
+              <span class="line__head-sub">LINE UP</span>
+            </h3>
+            <div class="line__box">
+              <div class="line__card">
+                <div class="line__img">
+                  <img src="./img/speaker_line.jpg" alt="スピーカー" />
+                </div>
+                <div class="line__text">
+                  <p class="line__product">House of Speaker</p>
+                  <p class="line__name">Rich Black</p>
+                </div>
+              </div>
+
+              <div class="line__card">
+                <div class="line__img">
+                  <img src="./img/projector_point.jpg" alt="プロジェクター" />
+                </div>
+                <div class="line__text">
+                  <p class="line__product">Mobile Projector</p>
+                  <p class="line__name">Silver</p>
+                </div>
+              </div>
+
+              <div class="line__card">
+                <div class="line__img">
+                  <img
+                    src="./img/sofa_scene1.jpg"
+                    alt="ろうそくとローテーブル"
+                  />
+                </div>
+                <div class="line__text">
+                  <p class="line__product">Couch Sofa</p>
+                  <p class="line__name">1P</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- scene2 -->
+    <section class="scene1 scene1--another">
+      <div class="section__inner">
+        <div class="scene1__contents scene1__contents--another">
+          <div class="scene1__img">
+            <p class="scene1__img-head">SCENE 02</p>
+            <img src="./img/room_scene2.jpg" alt="おしゃれなリビング" />
+          </div>
+          <div class="point__contents point__contents--another">
+            <div class="point__box">
+              <h3 class="point__head">
+                <span>季節にあった彩りを</span>
+                <span>手軽に楽しむ。</span>
+              </h3>
+              <h3 class="point__head-pc">季節にあった彩りを手軽に楽しむ。</h3>
+              <div class="point__cards">
+                <div class="point__card">
+                  <h4 class="point__explain">STYLE POINT</h4>
+                  <p class="point__text">
+                    ソファの上のクッションや壁面のフレーム、ソファ横の1人掛けの椅子などをベージュ〜ブラウンのアースカラーで統一。一方で碧編の白をワゴンの上に置くことで調和をとり、全体的に落ち着いた雰囲気に。
+                  </p>
+                  <div class="point__img">
+                    <img src="./img/room_point2.jpg" alt="観葉植物のある部屋" />
+                  </div>
+                </div>
+
+                <div class="point__card">
+                  <h4 class="point__explain point__explain--type2">
+                    ONE POINT ADVICE
+                  </h4>
+                  <p class="point__text">
+                    お部屋のコーディネートをまとめるコツの一つとして、<br />
+                    同系色を散らして使うテクニックがあります。寒い冬の日でもどこかあたたかさと落ち着きを感じさせるベージュ〜ブラウンのアースカラーを試してみては？
+                  </p>
+                  <div class="point__img">
+                    <img src="./img/sofa_point2.jpg" alt="おしゃれなソファ" />
+                  </div>
+                </div>
+              </div>
+              <div class="point__img-wrapper">
+                <div class="point__space">
+                  <div class="point__img-left">
+                    <img src="./img/room_point2.jpg" alt="おしゃれなリビング" />
+                  </div>
+                  <div class="point__img-right">
+                    <img src="./img/sofa_point2.jpg" alt="おしゃれなソファ" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scene1__line line__contents">
+            <h3 class="line__head">
+              <span class="line__head-main">使用している家具・家電</span
+              ><span class="line__head-sub">LINE UP</span>
+            </h3>
+            <div class="line__box">
+              <div class="line__card">
+                <div class="line__img">
+                  <img src="./img/sofa_line2.jpg" alt="グレーのローソファ" />
+                </div>
+                <div class="line__text">
+                  <p class="line__product">Low Sofa</p>
+                  <p class="line__name">ローソファ</p>
+                </div>
+              </div>
+
+              <div class="line__card">
+                <div class="line__img">
+                  <img src="./img/table_line2.jpg" alt="質素なローテーブル" />
+                </div>
+                <div class="line__text">
+                  <p class="line__product">Mini Table</p>
+                  <p class="line__name">直径45cm</p>
+                </div>
+              </div>
+
+              <div class="line__card">
+                <div class="line__img">
+                  <img src="./img/chair_lilne2.jpg" alt="白いシングルソファ" />
+                </div>
+                <div class="line__text">
+                  <p class="line__product">Single Sofa</p>
+                  <p class="line__name">一人掛けソファ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cv -->
+    <section class="cv">
+      <div class="cv__inner">
+        <div class="cv__contents">
+          <h2 class="cv__text">
+            <span class="cv__text-absolute">今だけ</span>
+            <span class="cv__text-sub">高品質でセンスのいい家具・家電を</span>
+            <span class="cv__text-main"
+              >10%OFF価格で<br class="hidden-pc" />
+              レンタルできます。</span
+            >
+          </h2>
+          <ul class="cv__list">
+            <li class="cv__step">月額440円〜</li>
+            <li class="cv__step">1ヶ月〜レンタル可能</li>
+            <li class="cv__step">長期レンタル割引あり</li>
+          </ul>
+          <div class="cv__button-wrapper">
+            <p class="cv__comment">カンタン！ 3 STEP</p>
+            <a class="cv__button" role="button">
+              <span class="cv__button-text">今すぐ会員登録</span>
+              <svg
+                class="cv__button-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M4 12H20"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 5L20 12L13 19"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature -->
+    <section class="feature">
+      <div class="section__inner">
+        <h2 class="section__heading">
+          <span class="heading__main">
+            Rich-Lifeが愛される<br class="hidden-pc" />4つのポイント
+          </span>
+          <span class="heading__sub">FEATURES</span>
+        </h2>
+        <div class="feature__contents">
+          <div class="feature__card">
+            <div class="feature__img">
+              <img src="./img/funiture_feature.png" alt="家具" />
+            </div>
+            <div class="feature__word">
+              <p class="feature__tag">point 01</p>
+              <h3 class="feature__heading">
+                <span class="feature__heading-brawn">交</span
+                >換・返却が自由でカンタン
+              </h3>
+              <p class="feature__text">
+                自分の生活に最適なものを使うために時間や労力をかけて選んだにも関わらず、「思っていたのと違う」と後悔した経験はありませんか？Rich-Lifeでは家具・家電のレンタルができますので取捨選択にかける時間を大幅にカットできます。また実際に使用してみて、自分に合わないと思ったらすぐに交換・返却ができるので、手軽さゆえの心の余裕が生まれるのもポイント。
+              </p>
+            </div>
+          </div>
+
+          <div class="feature__card card-reverse">
+            <div class="feature__img-sofa">
+              <img src="./img/sofa_feature.png" alt="ソファ" />
+            </div>
+            <div class="feature__word">
+              <p class="feature__tag">point 02</p>
+              <h3 class="feature__heading">
+                <span class="feature__heading-brawn">月</span
+                >額定額制で返却期限なし
+              </h3>
+              <p class="feature__text">
+                1ヶ月という短期間からのレンタルが可能ですので、自分により合う家具・家電を色々試せる手軽さが最大の特徴。また、月額定額制なので費用管理がしやすいのもポイント。
+              </p>
+            </div>
+          </div>
+
+          <div class="feature__card">
+            <div class="feature__img">
+              <img src="./img/funiture_feature.png" alt="家具" />
+            </div>
+            <div class="feature__word">
+              <p class="feature__tag">point 03</p>
+              <h3 class="feature__heading">
+                <span class="feature__heading-brawn">き</span
+                >ちんとした品質でセンスのいいものだけをセレクト
+              </h3>
+              <p class="feature__text">
+                きちんとしたモノは自分の生活の質を向上させてくれます。生活の質は心の余裕にも繋がりますので、それが自然と自分の気持ちをも高めてくれる好循環が生まれます。またきちんとした品質でかつセンスのいいものだけを取り揃えておりますので家具・家電の善し悪しが分からないという人でも失敗が少ないのも嬉しいポイントです。
+              </p>
+            </div>
+          </div>
+
+          <div class="feature__card card-reverse">
+            <div class="feature__img">
+              <img src="./img/family_feature.png" alt="ソファに座る家族" />
+            </div>
+            <div class="feature__word">
+              <p class="feature__tag">point 04</p>
+              <h3 class="feature__heading">
+                <span class="feature__heading-brawn">ラ</span
+                >イフステージの変化に対応
+              </h3>
+              <p class="feature__text">
+                年齢が上がるにつれてライフステージは変遷していくもの。それと同時に、そのときの暮らしにあった家具・家電のスペックが変わりますので、購入するとなると生活スタイルが変わるたびに家具・家電の入れ替えを迫られるなんてことも。でもRich-Lifeはレンタル品なので、先の心配をすることなく「今の自分に必要なモノだけ」を置いておける気楽さを手に入れられます。また、まだまだ使えるモノを廃棄するという手間や罪悪感をも払拭してくれます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- use -->
+    <section class="use">
+      <div class="section__inner">
+        <h2 class="section__heading">
+          <span class="heading__main">
+            気軽に簡単に<br class="hidden-pc" />Rich-Lifeの使い方
+          </span>
+          <span class="heading__sub">HOW TO USE</span>
+        </h2>
+        <div class="use__contents">
+          <div class="use__card">
+            <div class="use__img">
+              <img src="./img/phone_use.jpg" alt="スマホでネット注文" />
+            </div>
+            <h3 class="use__heading">
+              <span class="use__heading-number">01</span>ネットで注文
+            </h3>
+            <p class="use__text">
+              スマホやパソコンから、商品と配送希望日を選んで、注文
+            </p>
+          </div>
+
+          <div class="use__card">
+            <div class="use__img">
+              <img src="./img/deliver_use.jpg" alt="配送する男性" />
+            </div>
+            <h3 class="use__heading">
+              <span class="use__heading-number">02</span>配送・設置
+            </h3>
+            <p class="use__text">
+              専門業者がご自宅までお届け 商品の搬入は全ておまかせ
+            </p>
+          </div>
+
+          <div class="use__card">
+            <div class="use__img">
+              <img src="./img/chair_use.jpg" alt="おしゃれなイス" />
+            </div>
+            <h3 class="use__heading">
+              <span class="use__heading-number">03</span>ご利用
+            </h3>
+            <p class="use__text">
+              購入した商品と同じように普段の生活でご利用いただけます
+            </p>
+          </div>
+
+          <div class="use__card">
+            <div class="use__img">
+              <img src="./img/room_use.jpg" alt="おしゃれなリビング" />
+            </div>
+            <h3 class="use__heading">
+              <span class="use__heading-number">04</span>交換・返送
+            </h3>
+            <p class="use__text">
+              交換や返却の際も、搬出は専門業者に全ておまかせ ※一部地域を除く
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cv -->
+    <section class="cv">
+      <div class="cv__inner">
+        <div class="cv__contents">
+          <h2 class="cv__text">
+            <span class="cv__text-absolute">今だけ</span>
+            <span class="cv__text-sub">高品質でセンスのいい家具・家電を</span>
+            <span class="cv__text-main"
+              >10%OFF価格で<br class="hidden-pc" />レンタルできます。</span
+            >
+          </h2>
+          <ul class="cv__list">
+            <li class="cv__step">月額440円〜</li>
+            <li class="cv__step">1ヶ月〜レンタル可能</li>
+            <li class="cv__step">長期レンタル割引あり</li>
+          </ul>
+          <div class="cv__button-wrapper">
+            <p class="cv__comment">カンタン！ 3 STEP</p>
+            <a class="cv__button" role="button">
+              <span class="cv__button-text">今すぐ会員登録</span>
+              <svg
+                class="cv__button-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M4 12H20"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 5L20 12L13 19"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- qa -->
+    <section class="qa">
+      <div class="section__inner">
+        <h2 class="section__heading">
+          <span class="heading__main"> よくある質問</span>
+          <span class="heading__sub">FAQ</span>
+        </h2>
+        <div class="qa__contents">
+          <div class="qa__boxes">
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q</span>
+                <span class="qa-box__head-text">
+                  Rich-Lifeはどんなサービスですか？
+                </span>
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A</span>
+                  <span class="qa-box__a-text"
+                    >Rich-lifeは必要なときに必要なものだけを使える家具・家電のレンタルサービスです。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q</span>
+                <span class="qa-box__head-text"
+                  >レンタル期間は選べますか？</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A</span>
+                  <span class="qa-box__a-text"
+                    >レンタル期間は1ヶ月からです。更新手続きは毎月自動で行いますので更新手続きは不要です。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q</span>
+                <span class="qa-box__head-text"
+                  >注文してから届くまでどのくらい期間がかかりますか？</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A</span>
+                  <span class="qa-box__a-text"
+                    >商品とお住まいの地域によりますが、約1週間ほどでお届けいたします。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q</span>
+                <span class="qa-box__head-text">商品の交換は可能ですか？</span>
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A</span>
+                  <span class="qa-box__a-text"
+                    >可能でございます。マイページより交換申請手続きをお願いいたします。</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="qa__box">
+              <button type="button" class="qa-box__head js-accordion">
+                <span class="qa-box__head-icon">Q</span>
+                <span class="qa-box__head-text"
+                  >申込の仕方を教えてください。</span
+                >
+              </button>
+              <div class="qa-box__body">
+                <div class="qa-box__a">
+                  <span class="qa-box__a-icon">A</span>
+                  <span class="qa-box__a-text"
+                    >1.ご希望の商品を選択し、カートへ入れてください。<br />
+                    2.右上のカートボタンを押し、お届け先と支払い情報の登録をお願いいたします。<br />
+                    3.配送日を選択し、注文確定ボタンを押していただけましたら注文完了となります。</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__button-wrapper">
+            <a href="#" class="qa__button" role="button">
+              <span class="qa__button-text">よくある質問を見る</span>
+              <svg
+                class="qa__button-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="16"
+                viewBox="0 0 13 16"
+                fill="none"
+              >
+                <path
+                  d="M1.27724 15.4142C1.39857 15.4774 1.53479 15.5062 1.67128 15.4978C1.80777 15.4893 1.93939 15.4438 2.05199 15.3662L11.802 8.61625C11.9016 8.54722 11.983 8.45508 12.0393 8.34771C12.0955 8.24035 12.1249 8.12095 12.1249 7.99975C12.1249 7.87854 12.0955 7.75915 12.0393 7.65178C11.983 7.54441 11.9016 7.45227 11.802 7.38325L2.05199 0.633247C1.93947 0.555392 1.8078 0.509801 1.67123 0.501411C1.53466 0.493022 1.39839 0.522153 1.27719 0.585651C1.15599 0.64915 1.05447 0.744595 0.983617 0.861652C0.912767 0.978709 0.87529 1.11292 0.875244 1.24975V14.7497C0.875222 14.8867 0.912671 15.0209 0.983535 15.1381C1.0544 15.2552 1.15597 15.3507 1.27724 15.4142Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="section__inner">
+        <div class="footer__contents">
+          <div class="footer__boxes">
+            <div class="footer_box">
+              <h3 class="footer__heading">SERVICE</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">すべて</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">家具</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">家電</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">お知らせ</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">商品の魅力・選び方記事</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_box">
+              <h3 class="footer__heading">ABOUT</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">会社概要</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">採用情報</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_box">
+              <h3 class="footer__heading">SUPPORT</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">よくある質問</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">お問い合わせ(個人のお客様)</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">プライバシー</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">利用規約</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">法人会員向け利用規約</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">特定商取引法に基づく表記</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer_box">
+              <h3 class="footer__heading">CLAS BUSINESS</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">法人向けサービスについて</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">手軽にためす</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">まとめておまかせ</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">導入事例</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__sns">
+            <a class="footer__sns-img" href="#">
+              <img src="./img/instagram-footer.png" alt="Instagramのアイコン" />
+            </a>
+            <a class="footer__sns-img" href="#">
+              <img src="./img/twitter-footer.png" alt="Twitterのアイコン" />
+            </a>
+            <a class="footer__sns-img" href="#">
+              <img src="./img/facebook-footer.png" alt="Facebookのアイコン" />
+            </a>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copy-text">
+              本サイト内は株式会社CLAS様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません。
+            </p>
+            <p class="footer__copy-right">&copy;2022 Rich-Life Inc.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
